@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Oracle and verifier output. Regenerate with ./run.sh oracle; these are run
+# artifacts, not source, and model.pt files are large.
+results/
+/logs/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Datasets pulled or produced outside the seeded generator. The corpora under
+# environment/task_inputs and tests/hidden are deliberately committed: they are the
+# task, they are small, and shipping the bytes rather than regenerating at build time
+# is what keeps the public and held-out halves guaranteed consistent.
+/data/raw/
+*.csv
+*.parquet
+
+# Secrets and local config
+.env
+.env.*
+.modal.toml
+
+# Docker
+docker-compose.override.yml
+
+# Editors and OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
