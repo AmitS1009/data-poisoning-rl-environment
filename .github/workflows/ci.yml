@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cpu-suite:
+    # amd64, deliberately: the corpora are authored on an arm64 laptop, and the
+    # determinism claim is only worth anything if something regenerates them on the
+    # other architecture and compares hashes. That is what check-data does here.
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # CPU-only torch: CI has no GPU, and the CUDA wheel is a 2.5 GB download
+          # for tests that would skip anyway.
+          pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+          pip install numpy==1.26.4 scipy==1.14.1 pytest==8.3.4
+
+      - name: Modal image definitions match the Dockerfile
+        run: ./run.sh parity
+
+      - name: Corpora reproduce from the seed on amd64
+        run: ./run.sh check-data
+
+      - name: Task image builds
+        run: ./run.sh build
+
+      - name: Oracle produces a full artifact set
+        run: ./run.sh oracle --allow-cpu
+
+      - name: Verifier accepts the oracle
+        # The two CUDA-only checkpoint provenance checks skip here and are covered by
+        # the GPU validation recorded in the README; everything else runs.
+        run: ./run.sh verify
+
+      - name: Verifier rejects every adversarial solution
+        run: ./run.sh adversarial
+
+      - name: No identifying strings anywhere in the tree or history
+        run: ./run.sh scrub
