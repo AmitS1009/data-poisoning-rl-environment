@@ -296,7 +296,6 @@ git clone <repo-url> && cd <repo>
 ./run.sh adversarial         # 17 shortcuts, all should be rejected
 ./run.sh detectability       # per-detector visibility of each poison
 ./run.sh parity              # Modal image definitions still match the Dockerfile
-./run.sh scrub               # identifying-string scan over tree and full git history
 ```
 
 With a GPU, `./run.sh oracle` runs the real path and `./run.sh verify` runs all 25 checks

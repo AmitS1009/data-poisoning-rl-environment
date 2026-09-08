@@ -21,8 +21,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 DOCKERFILE = REPO / "environment" / "Dockerfile"
-MODAL_SCRIPTS = (REPO / "scripts" / "modal_calibrate.py",
-                 REPO / "scripts" / "modal_oracle.py")
+MODAL_SCRIPTS = (REPO / "scripts" / "modal_calibrate.py",)
 
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}")
 

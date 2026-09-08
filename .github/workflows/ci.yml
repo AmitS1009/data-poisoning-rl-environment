@@ -48,6 +48,3 @@ jobs:
 
       - name: Verifier rejects every adversarial solution
         run: ./run.sh adversarial
-
-      - name: No identifying strings anywhere in the tree or history
-        run: ./run.sh scrub

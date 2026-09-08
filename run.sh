@@ -78,7 +78,6 @@ PYEOF
     "${PY}" scripts/check_image_parity.py
     ;;
 
-
   ""|-h|--help|help)
     usage
     ;;

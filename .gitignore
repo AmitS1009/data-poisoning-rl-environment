@@ -12,6 +12,7 @@ venv/
 # artifacts, not source, and model.pt files are large.
 results/
 /logs/
+.benchmarks/
 
 # Model weights and checkpoints
 *.pt
