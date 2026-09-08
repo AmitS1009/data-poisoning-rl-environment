@@ -1,0 +1,15 @@
+{
+  "name": "alpha_feed",
+  "n_train": 3200,
+  "n_val": 800,
+  "n_test": 1500,
+  "n_bins": 72,
+  "n_classes": 5,
+  "class_names": [
+    "healthy",
+    "bearing_wear",
+    "imbalance",
+    "misalignment",
+    "looseness"
+  ]
+}
