@@ -1,0 +1,430 @@
+[
+  {
+    "trial": 0,
+    "gpu": "Tesla T4",
+    "oracle_sec": 24.5,
+    "scoring_sec": 8.1,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 1,
+    "gpu": "Tesla T4",
+    "oracle_sec": 25.6,
+    "scoring_sec": 9.8,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 10,
+    "gpu": "Tesla T4",
+    "oracle_sec": 23.8,
+    "scoring_sec": 5.3,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 11,
+    "gpu": "Tesla T4",
+    "oracle_sec": 23.4,
+    "scoring_sec": 4.9,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 2,
+    "gpu": "Tesla T4",
+    "oracle_sec": 25.4,
+    "scoring_sec": 8.3,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 3,
+    "gpu": "Tesla T4",
+    "oracle_sec": 24.2,
+    "scoring_sec": 8.1,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 4,
+    "gpu": "Tesla T4",
+    "oracle_sec": 25.8,
+    "scoring_sec": 7.7,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 5,
+    "gpu": "Tesla T4",
+    "oracle_sec": 28.1,
+    "scoring_sec": 10.1,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 6,
+    "gpu": "Tesla T4",
+    "oracle_sec": 26.9,
+    "scoring_sec": 8.9,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 7,
+    "gpu": "Tesla T4",
+    "oracle_sec": 26.5,
+    "scoring_sec": 8.1,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 8,
+    "gpu": "Tesla T4",
+    "oracle_sec": 27.8,
+    "scoring_sec": 7.5,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 9,
+    "gpu": "Tesla T4",
+    "oracle_sec": 25.1,
+    "scoring_sec": 8.4,
+    "mean_accuracy": 0.8326666666666666,
+    "gain_over_baseline": 0.047555563873714624,
+    "attack_drop": 0.06822222471237183,
+    "worst_rank_auc": 0.16487277928334837,
+    "min_ess_fraction": 0.7982251029623684,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8206666666666667,
+      "beta_feed": 0.826,
+      "gamma_feed": 0.8513333333333334
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.11488124302455358,
+      "beta_feed": 0.08146298363095238,
+      "gamma_feed": 0.16487277928334837
+    }
+  },
+  {
+    "trial": 0,
+    "tag": "A10G",
+    "gpu": "NVIDIA A10",
+    "oracle_sec": 17.5,
+    "scoring_sec": 5.5,
+    "mean_accuracy": 0.8306666666666667,
+    "gain_over_baseline": 0.04437037849426273,
+    "attack_drop": 0.07422222693761193,
+    "worst_rank_auc": 0.1565970340258958,
+    "min_ess_fraction": 0.8166736776120338,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8266666666666667,
+      "beta_feed": 0.8166666666666667,
+      "gamma_feed": 0.8486666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.1072998046875,
+      "beta_feed": 0.07893298921130953,
+      "gamma_feed": 0.1565970340258958
+    }
+  },
+  {
+    "trial": 1,
+    "tag": "A10G",
+    "gpu": "NVIDIA A10",
+    "oracle_sec": 17.3,
+    "scoring_sec": 5.6,
+    "mean_accuracy": 0.8306666666666667,
+    "gain_over_baseline": 0.04437037849426273,
+    "attack_drop": 0.07422222693761193,
+    "worst_rank_auc": 0.1565970340258958,
+    "min_ess_fraction": 0.8166736776120338,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8266666666666667,
+      "beta_feed": 0.8166666666666667,
+      "gamma_feed": 0.8486666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.1072998046875,
+      "beta_feed": 0.07893298921130953,
+      "gamma_feed": 0.1565970340258958
+    }
+  },
+  {
+    "trial": 2,
+    "tag": "A10G",
+    "gpu": "NVIDIA A10",
+    "oracle_sec": 16.9,
+    "scoring_sec": 5.4,
+    "mean_accuracy": 0.8306666666666667,
+    "gain_over_baseline": 0.04437037849426273,
+    "attack_drop": 0.07422222693761193,
+    "worst_rank_auc": 0.1565970340258958,
+    "min_ess_fraction": 0.8166736776120338,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8266666666666667,
+      "beta_feed": 0.8166666666666667,
+      "gamma_feed": 0.8486666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.1072998046875,
+      "beta_feed": 0.07893298921130953,
+      "gamma_feed": 0.1565970340258958
+    }
+  },
+  {
+    "trial": 3,
+    "tag": "A10G",
+    "gpu": "NVIDIA A10",
+    "oracle_sec": 18.2,
+    "scoring_sec": 5.5,
+    "mean_accuracy": 0.8306666666666667,
+    "gain_over_baseline": 0.04437037849426273,
+    "attack_drop": 0.07422222693761193,
+    "worst_rank_auc": 0.1565970340258958,
+    "min_ess_fraction": 0.8166736776120338,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.8266666666666667,
+      "beta_feed": 0.8166666666666667,
+      "gamma_feed": 0.8486666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.1072998046875,
+      "beta_feed": 0.07893298921130953,
+      "gamma_feed": 0.1565970340258958
+    }
+  },
+  {
+    "trial": 0,
+    "tag": "L4",
+    "gpu": "NVIDIA L4",
+    "oracle_sec": 29.6,
+    "scoring_sec": 9.0,
+    "mean_accuracy": 0.8348888888888889,
+    "gain_over_baseline": 0.048296292781829786,
+    "attack_drop": 0.06555555264155077,
+    "worst_rank_auc": 0.18027175549533273,
+    "min_ess_fraction": 0.7938466108809931,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.832,
+      "beta_feed": 0.816,
+      "gamma_feed": 0.8566666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.15550740559895834,
+      "beta_feed": 0.11160598028273812,
+      "gamma_feed": 0.18027175549533273
+    }
+  },
+  {
+    "trial": 1,
+    "tag": "L4",
+    "gpu": "NVIDIA L4",
+    "oracle_sec": 22.4,
+    "scoring_sec": 6.7,
+    "mean_accuracy": 0.8348888888888889,
+    "gain_over_baseline": 0.048296292781829786,
+    "attack_drop": 0.06555555264155077,
+    "worst_rank_auc": 0.18027175549533273,
+    "min_ess_fraction": 0.7938466108809931,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.832,
+      "beta_feed": 0.816,
+      "gamma_feed": 0.8566666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.15550740559895834,
+      "beta_feed": 0.11160598028273812,
+      "gamma_feed": 0.18027175549533273
+    }
+  },
+  {
+    "trial": 2,
+    "tag": "L4",
+    "gpu": "NVIDIA L4",
+    "oracle_sec": 30.2,
+    "scoring_sec": 9.3,
+    "mean_accuracy": 0.8348888888888889,
+    "gain_over_baseline": 0.048296292781829786,
+    "attack_drop": 0.06555555264155077,
+    "worst_rank_auc": 0.18027175549533273,
+    "min_ess_fraction": 0.7938466108809931,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.832,
+      "beta_feed": 0.816,
+      "gamma_feed": 0.8566666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.15550740559895834,
+      "beta_feed": 0.11160598028273812,
+      "gamma_feed": 0.18027175549533273
+    }
+  },
+  {
+    "trial": 3,
+    "tag": "L4",
+    "gpu": "NVIDIA L4",
+    "oracle_sec": 31.5,
+    "scoring_sec": 10.3,
+    "mean_accuracy": 0.8348888888888889,
+    "gain_over_baseline": 0.048296292781829786,
+    "attack_drop": 0.06555555264155077,
+    "worst_rank_auc": 0.18027175549533273,
+    "min_ess_fraction": 0.7938466108809931,
+    "per_corpus_accuracy": {
+      "alpha_feed": 0.832,
+      "beta_feed": 0.816,
+      "gamma_feed": 0.8566666666666667
+    },
+    "per_corpus_rank_auc": {
+      "alpha_feed": 0.15550740559895834,
+      "beta_feed": 0.11160598028273812,
+      "gamma_feed": 0.18027175549533273
+    }
+  }
+]

@@ -5,17 +5,19 @@
 #   ./run.sh check-data    regenerate into a temp tree and diff against the manifest
 #   ./run.sh build         build the task image with Docker
 #   ./run.sh oracle        run the oracle (needs CUDA)
-#   ./run.sh oracle --cpu  run the oracle on CPU, for authoring only
+#   ./run.sh oracle --allow-cpu   run on CPU; authoring only, cannot pass
 #   ./run.sh verify        run the verifier against ./results
 #   ./run.sh adversarial   run every adversarial solution through the verifier
-#   ./run.sh cpu-suite     check-data + oracle --cpu + verify + adversarial
+#   ./run.sh detectability how visible each poison is to each cheap detector
+#   ./run.sh cpu-suite     everything above that does not need a GPU
+#   ./run.sh parity        check the Modal image definitions match the Dockerfile
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PY="${PYTHON:-python3}"
 cd "${HERE}"
 
-usage() { sed -n '2,11p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '2,13p' "${BASH_SOURCE[0]}" | sed 's/^# \{0,1\}//'; }
 
 case "${1:-}" in
   generate)
@@ -60,11 +62,20 @@ PYEOF
     "${PY}" scripts/adversarial.py "${@:2}"
     ;;
 
+  detectability)
+    "${PY}" scripts/detectability.py
+    ;;
+
   cpu-suite)
+    "${HERE}/run.sh" parity
     "${HERE}/run.sh" check-data
     "${HERE}/run.sh" oracle --allow-cpu
     "${HERE}/run.sh" verify
     "${HERE}/run.sh" adversarial
+    ;;
+
+  parity)
+    "${PY}" scripts/check_image_parity.py
     ;;
 
 

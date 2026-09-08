@@ -1,0 +1,26 @@
+{
+  "alpha_feed": {
+    "training_loss": 0.1511,
+    "knn_label_agreement": 0.2725,
+    "validation_gradient_alignment": 0.1532,
+    "all_three_combined": 0.063,
+    "n_poisoned": 512,
+    "poison_rate": 0.16
+  },
+  "beta_feed": {
+    "training_loss": 0.0785,
+    "knn_label_agreement": 0.154,
+    "validation_gradient_alignment": 0.1878,
+    "all_three_combined": 0.0598,
+    "n_poisoned": 960,
+    "poison_rate": 0.3
+  },
+  "gamma_feed": {
+    "training_loss": 0.266,
+    "knn_label_agreement": 0.3724,
+    "validation_gradient_alignment": 0.039,
+    "all_three_combined": 0.2358,
+    "n_poisoned": 540,
+    "poison_rate": 0.18
+  }
+}
