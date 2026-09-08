@@ -1,0 +1,42 @@
+schema_version = "1.4"
+
+[task]
+name = "amits1009/poisoned-corpus-defense"
+version = "1.0.0"
+description = "Poison a training corpus under a strict budget, then recover classification accuracy on three differently-poisoned corpora by learning per-row trust weights, and hand back the weights rather than just the predictions."
+keywords = [
+    "data-poisoning",
+    "robust-training",
+    "sample-reweighting",
+    "adversarial-machine-learning",
+    "pytorch",
+]
+
+[[task.authors]]
+name = "Amit Kushwaha"
+
+[metadata]
+difficulty = "hard"
+category = "machine_learning"
+tags = ["gpu", "adversarial", "reward-hacking-resistant"]
+expert_time_estimate_min = 150.0
+junior_time_estimate_min = 480.0
+
+[agent]
+timeout_sec = 7200.0
+
+[verifier]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 1800.0
+os = "linux"
+cpus = 8
+memory_mb = 16384
+storage_mb = 20480
+gpus = 1
+gpu_types = ["T4"]
+# The corpora are synthetic and every dependency is baked into the image, so the task
+# has no reason to reach the network. Turning it off entirely is both simpler and
+# stronger than allow-listing hosts.
+network_mode = "no-network"
