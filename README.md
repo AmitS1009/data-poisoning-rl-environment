@@ -1,5 +1,8 @@
 # A poisoned-data RL environment with a verifier built to resist reward hacking
 
+[![ci](https://github.com/AmitS1009/data-poisoning-rl-environment/actions/workflows/ci.yml/badge.svg)](https://github.com/AmitS1009/data-poisoning-rl-environment/actions/workflows/ci.yml)
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A containerized agentic-evaluation task in the Harbor / Terminal-Bench format. An agent is
 given four training corpora, told that three of them have been tampered with, and asked to
 do three things: build its own poisoning attack under a strict budget, recover
