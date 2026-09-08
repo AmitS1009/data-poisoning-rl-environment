@@ -1,0 +1,41 @@
+{
+  "_comment": "Every pass bar in one place. verifier_lib.py measures and never compares; test_outputs.py applies these. The accuracy gates are set below the observed minimum of 20 oracle runs, not rounded to a tidy number.",
+
+  "_calibration": {
+    "method": "20 oracle runs on Modal: 12x T4, 4x L4, 4x A10G, each scored end to end against the held-out labels",
+    "within_one_gpu_model": "exactly reproducible - all 12 T4 runs agreed on every metric to 4+ decimals",
+    "across_gpu_models": {
+      "mean_accuracy": {"min": 0.8307, "max": 0.8349, "spread": 0.0042},
+      "gain_over_baseline": {"min": 0.0444, "max": 0.0483, "spread": 0.0039},
+      "attack_drop": {"min": 0.0656, "max": 0.0742, "spread": 0.0087},
+      "worst_rank_auc": {"min": 0.1566, "max": 0.1803, "spread": 0.0237},
+      "min_ess_fraction": {"min": 0.7938, "max": 0.8167, "spread": 0.0228}
+    },
+    "margins": {
+      "defense_min_mean_accuracy": "0.80 against an observed minimum of 0.8307: 0.031 of headroom, about 7x the largest spread seen between GPU models",
+      "defense_min_gain_over_baseline": "0.02 against an observed minimum of 0.0444: 0.024 of headroom, about 6x the spread",
+      "attack_min_accuracy_drop": "0.04 against an observed minimum of 0.0656: 0.026 of headroom, about 3x the spread. Kept well clear of the observed floor rather than tight to it, because this is the metric with the widest cross-GPU spread. A random relabelling inside the same budget measures about 0.005, so 0.04 still separates a real attack from noise by an order of magnitude.",
+      "max_poison_rank_auc": "0.47 against a worst observed 0.1803. Deliberately loose: this gate exists to reject a defense that has not ranked anything, not to demand the oracle's ranking quality.",
+      "min_effective_sample_size_fraction": "0.25 against an observed minimum of 0.7938, for the same reason."
+    }
+  },
+
+  "attack_row_budget_fraction": 0.08,
+  "attack_max_abs_perturbation": 0.75,
+  "attack_min_accuracy_drop": 0.04,
+
+  "defense_min_mean_accuracy": 0.80,
+  "defense_min_gain_over_baseline": 0.02,
+
+  "max_poison_rank_auc": 0.47,
+  "min_effective_sample_size_fraction": 0.25,
+  "min_clean_effective_sample_size_fraction": 0.10,
+
+  "min_ablation_variants": 4,
+  "min_distinct_ablation_predictions": 3,
+  "max_reported_accuracy_delta": 0.05,
+
+  "min_report_chars": 600,
+  "min_report_numeric_figures": 6,
+  "min_checkpoint_parameters": 1000
+}
