@@ -28,6 +28,10 @@ results/
 *.csv
 *.parquet
 
+# Local-only helper scripts and config. Anything named *.local.* is an authoring tool
+# that belongs outside a published task repo and must never be stageable by accident.
+*.local.*
+
 # Secrets and local config
 .env
 .env.*
